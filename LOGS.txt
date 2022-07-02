@@ -1,0 +1,464 @@
+Please enter your Role (Admin/User)
+Admi
+Invalid Role
+Plese ReEnter
+Please enter your Role (Admin/User)
+Admin
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+1
+Enter the Book Id
+6
+Enter the Bookname
+The Book Thief
+Enter the BookAuthor
+Markus Zusak
+Enter the description
+The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II. 
+Enter the Book Price
+1200
+Enter the Book Genre
+Fiction
+Apr 23, 2022 6:44:11 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.5.6.Final
+Apr 23, 2022 6:44:11 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Apr 23, 2022 6:44:12 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Apr 23, 2022 6:44:12 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 6:44:12 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 6:44:12 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 6:44:12 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 6:44:12 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 6:44:13 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3178219a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 6:44:13 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: insert into MagicBooks (Price, authorname, description, genre, name, id) values (?, ?, ?, ?, ?, ?)
+Apr 23, 2022 6:44:14 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Record Inserted Sucessfully
+do you want to Continue ?(y/n)
+y
+
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+2
+
+id|Price |authorname         |description                                                                                                                                                                                                      |genre        |name                         |
+--+------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-----------------------------+
+ 1| 850.0|Jame Joyce         |Ulysses is the story of a day in the life of Leopold Bloom as he travels Dublin and goes about his business, attending a funeral, buying soap, going to the Library, walking by the beach, going to the pub etc. |Fiction      |Ulysses                      |
+ 2|1250.0|Miguel D           |Don Quixote is a gaunt, middle-aged gentleman who, having gone mad from reading too many books about chivalrous knights, determines to set off on a great adventure                                              |Novel        |Don Quixote                  |
+ 3| 980.0|Gabriel G          |One Hundred Years of Solitude tells the story of the fictional Colombian town Macondo and the rise and fall of its founders, the Buendía family.                                                                 |Autobiography|One Hundred Years of Solitude|
+ 4| 890.0|William Shakespeare|Hamlet is a story of how the ghost of a murdered king comes to haunt the living with tragic consequences.                                                                                                        |Tragedy      |Hamlet                       |
+ 5|1270.0|Marcel Proust      |In Search of Lost Time, also translated as Remembrance of Things Past, novel in seven parts by Marcel Proust, published in French as À la recherche du temps perdu from 1913 to 1927.                            |Novel        |In Search of Lost Time       |
+ 6|1200.0|Markus Zusak       |The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II.                                                                         |Fiction      |The Book Thief               |
+
+Enter the ID of the Book
+1
+Apr 23, 2022 7:12:18 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.5.6.Final
+Apr 23, 2022 7:12:19 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:12:20 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:12:21 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3178219a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:12:21 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_0_, book0_.Price as price2_0_0_, book0_.authorname as authorna3_0_0_, book0_.description as descript4_0_0_, book0_.genre as genre5_0_0_, book0_.name as name6_0_0_ from MagicBooks book0_ where book0_.id=?
+Hibernate: delete from MagicBooks where id=?
+Apr 23, 2022 7:12:21 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Record Deleted Sucessfully
+do you want to Continue ?(y/n)
+y
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+2
+Enter the ID of the Book
+1
+Apr 23, 2022 7:12:18 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.5.6.Final
+Apr 23, 2022 7:12:19 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:12:20 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:12:20 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:12:21 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3178219a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:12:21 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_0_, book0_.Price as price2_0_0_, book0_.authorname as authorna3_0_0_, book0_.description as descript4_0_0_, book0_.genre as genre5_0_0_, book0_.name as name6_0_0_ from MagicBooks book0_ where book0_.id=?
+Hibernate: delete from MagicBooks where id=?
+Apr 23, 2022 7:12:21 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Record Deleted Sucessfully
+do you want to Continue ?(y/n)
+y
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+3
+Enter the id Of the Book
+2
+Apr 23, 2022 7:14:46 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:14:46 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:14:46 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:14:46 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:14:46 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:14:46 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:14:46 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14447be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:14:46 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_0_, book0_.Price as price2_0_0_, book0_.authorname as authorna3_0_0_, book0_.description as descript4_0_0_, book0_.genre as genre5_0_0_, book0_.name as name6_0_0_ from MagicBooks book0_ where book0_.id=?
+Enter the Book id
+2
+Enter the Book name
+Don Quixote 
+Enter the Book Author
+Miguel D  
+Enter the Book description
+Don Quixote is a gaunt, middle-aged gentleman who, having gone mad from reading too many books about chivalrous knights, determines to set off on a great adventure 
+Enter the Book Genre
+Novel
+Enter the Price
+1250
+Hibernate: update MagicBooks set Price=?, authorname=?, description=?, genre=?, name=? where id=?
+Apr 23, 2022 7:15:59 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Updated Sucessful
+do you want to Continue ?(y/n)
+y
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+4
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:17:25 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:17:25 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@996a546] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:17:27 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:17:27 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@64502326] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+=====================================================================================
+Book [id=2, name=Don Quixote , authorname=Miguel D  , description=Don Quixote is a gaunt, middle-aged gentleman who, having gone mad from reading too many books about chivalrous knights, determines to set off on a great adventure , genre=Novel, Price=1250.0]
+Book [id=3, name=One Hundred Years of Solitude, authorname=Gabriel G, description=One Hundred Years of Solitude tells the story of the fictional Colombian town Macondo and the rise and fall of its founders, the Buendía family.  , genre=Autobiography, Price=980.0]
+Book [id=4, name=Hamlet , authorname=William Shakespeare, description=Hamlet is a story of how the ghost of a murdered king comes to haunt the living with tragic consequences.                                    , genre=Tragedy, Price=890.0]
+Book [id=5, name=In Search of Lost Time  , authorname=Marcel Proust    , description=In Search of Lost Time, also translated as Remembrance of Things Past, novel in seven parts by Marcel Proust, published in French as À la recherche du temps perdu from 1913 to 1927., genre=Novel   , Price=1270.0]
+Book [id=6, name=The Book Thief, authorname=Markus Zusak , description=The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II., genre=Fiction, Price=1200.0]
+=====================================================================================
+Successfully retrived
+do you want to Continue ?(y/n)
+y
+1.	Display Book count
+2.	Display via Genre
+3.	Book Information
+4.	Arrange price low to high 
+5.	Arrange price high to low
+6.	Arrange best selling on Top
+Please enter your choice
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:17:25 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:17:25 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@996a546] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:17:27 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+1
+Total number of Book 
+5
+Do you want to continue?
+y
+
+1.	Display Book count
+2.	Display via Genre
+3.	Book Information
+4.	Arrange price low to high 
+5.	Arrange price high to low
+6.	Arrange best selling on Top
+Please enter your choice
+2
+Please Enter the Genre
+Autobiography
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:17:25 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:17:25 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@996a546] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: True
+Successfully retrived
+3 One Hundred Years of Solitude
+5 In Search of Lost Time
+Total number of Book 
+Do you want to continue?
+y
+1.	Display Book count
+2.	Display via Genre
+3.	Book Information
+4.	Arrange price low to high 
+5.	Arrange price high to low
+6.	Arrange best selling on Top
+Please enter your choice
+3
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:17:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:17:25 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:17:25 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@996a546] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:17:27 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Book Information
+2 Don Quixote
+3 One Hundred Years of Solitude
+4 Hamlet
+5 In Search of Lost Time
+6 The Book Thief
+Please Enter the Book name id you want to Describe
+6
+Book name:- The Book Thief
+Book Genre:- Friction
+Book Author:- Markus Zusak
+Book description:-
+ The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II. She steals books, learns to read, and finds comfort in words. She and Max, the Jew her family protects, are the only main characters that survive the war.
+Book Price:- 1200
+number of Copies sold:- 22
+Do you want to continue?
+y
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+7
+1:Price - Low to High
+2.Price - High to Low
+1
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:31:01 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:31:01 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@74667e6a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_ order by book0_.Price
+Apr 23, 2022 7:31:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+=============================================================
+Book [id=4, name=Hamlet , authorname=William Shakespeare, description=Hamlet is a story of how the ghost of a murdered king comes to haunt the living with tragic consequences.                                    , genre=Tragedy, Price=890.0]
+Book [id=3, name=One Hundred Years of Solitude, authorname=Gabriel G, description=One Hundred Years of Solitude tells the story of the fictional Colombian town Macondo and the rise and fall of its founders, the Buendía family.  , genre=Autobiography, Price=980.0]
+Book [id=6, name=The Book Thief, authorname=Markus Zusak , description=The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II., genre=Fiction, Price=1200.0]
+Book [id=2, name=Don Quixote , authorname=Miguel D  , description=Don Quixote is a gaunt, middle-aged gentleman who, having gone mad from reading too many books about chivalrous knights, determines to set off on a great adventure , genre=Novel, Price=1250.0]
+Book [id=5, name=In Search of Lost Time  , authorname=Marcel Proust    , description=In Search of Lost Time, also translated as Remembrance of Things Past, novel in seven parts by Marcel Proust, published in French as À la recherche du temps perdu from 1913 to 1927., genre=Novel   , Price=1270.0]
+=============================================================
+do you want to Continue ?(y/n)
+y
+1:Add Books
+2.Delete Books
+3.UpdateBooks
+4.Display all the Books
+5.Total count Of Books
+6.Books under Autobiography genre
+7.Arrange in Order
+Enter your Choice
+7
+1:Price - Low to High
+2.Price - High to Low
+2
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week4]
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Apr 23, 2022 7:31:10 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Apr 23, 2022 7:31:10 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@553d2579] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select book0_.id as id1_0_, book0_.Price as price2_0_, book0_.authorname as authorna3_0_, book0_.description as descript4_0_, book0_.genre as genre5_0_, book0_.name as name6_0_ from MagicBooks book0_ order by book0_.Price desc
+Apr 23, 2022 7:31:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/week4]
+=============================================================
+Book [id=5, name=In Search of Lost Time  , authorname=Marcel Proust    , description=In Search of Lost Time, also translated as Remembrance of Things Past, novel in seven parts by Marcel Proust, published in French as À la recherche du temps perdu from 1913 to 1927., genre=Novel   , Price=1270.0]
+Book [id=2, name=Don Quixote , authorname=Miguel D  , description=Don Quixote is a gaunt, middle-aged gentleman who, having gone mad from reading too many books about chivalrous knights, determines to set off on a great adventure , genre=Novel, Price=1250.0]
+Book [id=6, name=The Book Thief, authorname=Markus Zusak , description=The Book Thief is a story narrated by a compassionate Death who tells us about Liesel, a girl growing up in Germany during World War II., genre=Fiction, Price=1200.0]
+Book [id=3, name=One Hundred Years of Solitude, authorname=Gabriel G, description=One Hundred Years of Solitude tells the story of the fictional Colombian town Macondo and the rise and fall of its founders, the Buendía family.  , genre=Autobiography, Price=980.0]
+Book [id=4, name=Hamlet , authorname=William Shakespeare, description=Hamlet is a story of how the ghost of a murdered king comes to haunt the living with tragic consequences.                                    , genre=Tragedy, Price=890.0]
+=============================================================
+do you want to Continue ?(y/n)
+n
+Press 1 from Main Menu and 0 For Exit!
+0
+
